@@ -60,19 +60,45 @@ class PostController extends Controller
     //     return $posts;
     // }
 
-    function posts(){
-        $result = DB::table('posts')->insert([
-            'title' => 'X',
-            'slug' => 'X',
-            'excerpt' => 'excerpt',
-            'description' => 'description',
-            'is_published' => true,
-            'min_to_read' => 2,
-        ]);
+    // Answer question-7
+
+    // function posts(){
+    //     $posts =DB::table('posts')->select('title')->get();
+    //     dd($posts);
+    // }
+
+
+    // Answer question-8
+
+    // function posts(){
+    //     $result = DB::table('posts')->insert([
+    //         'title' => 'X',
+    //         'slug' => 'X',
+    //         'excerpt' => 'excerpt',
+    //         'description' => 'description',
+    //         'is_published' => true,
+    //         'min_to_read' => 2,
+    //     ]);
         
-        // Print the result of the insert operation
-        dd($result);
-    }
-     
+    //     // Print the result of the insert operation
+    //     dd($result);
+    // }
+
+    // Answer question-9
+    
+    //    function posts(){
+    //     $affectedRows =DB::table('posts')->where('id', 2)->update([
+    //         'excerpt' =>'Laravel 10',
+    //         'description' => 'Laravel 10',
+    //     ]);
+    //      echo "Number of affected rows: ".$affectedRows;
+    //    }
+
+    // Answer question-10
+
+    //    function posts(){
+    //     $affectedRows = DB::table('posts')->where('id', 3)->delete();
+    //     echo "Number of affected rows: " . $affectedRows;
+    //     }
 
 }
